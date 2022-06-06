@@ -1,0 +1,37 @@
+{% extends "baseindex.html" %}
+{% block content %}
+
+<style>
+    body {background-color: #3D2683;}
+</style>
+<form>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                {% load static %}
+                <img src="{% static "css/img/Supinfo.png" %}"  class="center"/>
+                <h1 class="titrelog2">L'école des experts</h1>
+                <h1 class="titrelog">métiers de l'informatique</h1>
+            </div>
+            <div class="col-6">
+                <label class="h1log1"><b>Email :</b></label>
+                <!-- <label class="h1log1"><b>{{ person }}</li></b></label> -->
+                <br>
+                <input type="text" name="username" required size="50">
+                <br>
+                <label class="h1log"><b>Password :</b></label>
+                <br>
+                <input type="password" name="password" required size="50">
+                <br>
+                <a href="/home" class="mdpf">
+                    <u>Mot de passe oublié?</u>
+                </a>
+                <br>
+                <input type="checkbox" id="sco" class="sco"> <label class="mdpf">Rester connecter</label>
+                <br>
+                <input type="submit" id='submit' value='Se connecter' class="logsub" onclick="location.href='/home';"></input>                
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}
