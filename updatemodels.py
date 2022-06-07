@@ -1,7 +1,7 @@
 import django
 import os
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'projm.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'settings')
 django.setup()
 
 from django.core.management.base import BaseCommand
