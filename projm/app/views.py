@@ -15,3 +15,7 @@ def home(request):
 def cours_eleve(request):
     person = "Retour base de données: " + User.objects.get(username='Abigail Byfford').first_name
     return render(request, 'cours_eleve.html', locals())
+
+def administration(request):
+    person = "Retour base de données: " + User.objects.get(username='Abigail Byfford').first_name
+    return render(request, 'administration.html', locals())
