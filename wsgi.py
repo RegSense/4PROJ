@@ -8,6 +8,7 @@ https://docs.djangoproject.com/en/4.0/howto/deployment/wsgi/
 """
 
 import os
+from django.apps import apps
 
 from django.core.wsgi import get_wsgi_application
 
