@@ -18,4 +18,7 @@ def cours_eleve(request):
 
 def administration(request):
     person = "Retour base de données: " + User.objects.get(username='Abigail Byfford').first_name
+    allfirstname = User.objects.all().values_list('first_name', flat=True)
+    alllastname = User.objects.all().values_list('last_name', flat=True)
+    allemail = User.objects.all().values_list('email', flat=True)
     return render(request, 'administration.html', locals())

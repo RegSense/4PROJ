@@ -2,12 +2,32 @@
 {% block content %}
 <div class="container disptweet">
     <div class="row">
+      Rechercher:
+    </div>
+    <br>
+    <div class="row">
       <div class="col-sm1">
       </div>
-      <div class="col-sm">
-        {{ person }}
+      <div class="col-sm1">
+        <label>Prénom</label>
+        {% for object in allfirstname %} 
+          {{ object }}{% if not forloop.last %}{% endif %} 
+          <br>
+        {% endfor %}
       </div>
-      <div class="col-sm3">
+      <div class="col-sm1">
+        <label>Nom</label>
+        {% for object in alllastname %} 
+          {{ object }}{% if not forloop.last %}{% endif %} 
+          <br>
+        {% endfor %}
+      </div>
+      <div class="col-sm">
+        <label>email</label>
+        {% for object in allemail %} 
+          {{ object }}{% if not forloop.last %}{% endif %} 
+          <br>
+        {% endfor %}
       </div>
     </div>
   </div>
