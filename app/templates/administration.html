@@ -25,7 +25,7 @@
       <div class="col-sm">
         <label>email</label>
         {% for object in allemail %} 
-          {{ object }}{% if not forloop.last %}{% endif %} 
+          {{ user_dic.first_name }}{% if not forloop.last %}{% endif %} 
           <br>
         {% endfor %}
       </div>
